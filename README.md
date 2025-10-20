@@ -5,7 +5,15 @@ This project provides key insights into customer behavior, driver performance, a
 
 ---
 
-## 📊 Customer Dashboard (Power BI)
+## 🧠 Tech Stack  
+- **Python** – Data cleaning & transformation (Pandas, NumPy)  
+- **Power BI** – Dashboard design & visualization  
+- **Excel** – Initial data exploration  
+- **GitHub** – Version control and project sharing  
+
+---
+
+## 📊 Customer Dashboard  
 ![Customer Dashboard](Customer%20Dashboard.png)
 
 ### Dashboard Overview  
@@ -26,75 +34,93 @@ Interactive filters allow users to view trends by **Payment Method**, **Vehicle 
    - **Cash** still relevant (13M), suggesting hybrid payment support is essential.  
 5. **Vehicle Type Demand:**  
    - **Auto (24.9%)** and **Go Mini (19.8%)** are most popular — users prefer **affordable, compact rides**.  
-   - **Premium and eBike rides** have smaller but stable shares.  
 6. **Customer Ratings:** All vehicle types maintain **~4.4 stars**, showing consistent satisfaction levels.  
 7. **Seasonal Trends:**  
    - Bookings peak in **Q1 and Q4**, possibly linked to holidays or weather patterns.
 
 ---
 
-### 💡 Recommendations  
-1. **Reduce Cancellations:**  
-   - Analyze driver availability by region/time to reduce unassigned or canceled rides.  
-   - Introduce driver incentives during high-demand hours.  
-2. **Boost Completion Rate:**  
-   - Implement a customer reminder system for scheduled rides.  
-   - Improve driver-customer matching algorithms.  
-3. **Enhance Digital Payment Offers:**  
-   - Offer **discounts or cashback** for UPI/Wallet users to sustain digital adoption.  
-4. **Promote Affordable Ride Options:**  
-   - Continue investing in **Auto** and **Go Mini** — the most used segments.  
-5. **Seasonal Marketing:**  
-   - Launch campaigns in **Q1 and Q4** to maximize profit during peak demand periods.  
-6. **Customer Retention:**  
-   - Introduce loyalty points for frequent users to sustain engagement.
-
----
-## 🚗 Driver Dashboard (Power BI)
-
+## 🚗 Driver Dashboard  
 ![Driver Dashboard](Driver%20Dashboard.png)
 
-Analyzes driver reliability, activity, and performance metrics.
-
-**Key Metrics:**
-- Driver Completion Rate: **62%**  
-- Driver Cancellation Rate: **18%**  
-- Average Driver Rating: **4.24**  
-- Average Ride Distance: **24.64 km**  
-- Total Active Drivers: **1,047**
-
-**Insights:**
-- Drivers maintain good overall performance but with improvement potential.  
-- Long ride distances add value but may cause fatigue.  
-- High driver cancellation may need better incentive structures.
+### Overview  
+The **Driver Dashboard** focuses on performance, efficiency, and operational challenges.  
+It includes KPIs such as completion rate, driver cancellations, average driver ratings, and average vehicle travel & arrival times (VTAT).
 
 ---
 
-## 🎯 Objectives
-- Analyze and compare **driver** and **customer** behavior.  
-- Build **interactive dashboards** for easy insights.  
-- Support business decisions using **data-driven insights**.  
-- Identify **operational bottlenecks** and opportunities.
+## 📊 Driver Dashboard & Customer Dashboard Analysis  
+
+### 🎯 Overall Insights  
+
+| Metric | Driver Dashboard | Customer Dashboard | Observation / Analysis |
+| :--- | :--- | :--- | :--- |
+| **Completion Rate** | **62%** | **62%** | Identical across both dashboards — about 38% of trips remain incomplete, which is a major operational concern. |
+| **Total Customers** | - | **148K** | A strong customer base that needs improved fulfillment performance. |
+| **Driver Cancellation Rate** | **18%** | - | **High:** 18% of trips are canceled by drivers, the primary cause of low completion rate. |
+| **Customer Cancellation Rate** | - | **6.6%** | **Relatively Low:** Much lower than driver cancellation, suggesting the issue is mainly driver-side. |
+| **Avg Driver Rating** | **4.24** | **4.4** (by vehicle type) | **Acceptable:** but improvement needed to enhance overall service quality. |
+| **Avg VTAT (Driver Arrival Time)** | **8.41 mins** | - | **High:** may cause customer cancellations and poor satisfaction. |
+| **Avg CTAT (Customer Total Awaiting Time)** | - | **29.15 mins** | High total waiting time (including search time), potentially impacting the customer experience. |
 
 ---
 
-## 🛠️ Tools & Technologies
+### 🔍 Key Insights  
 
-| Category | Tools |
-|-----------|--------|
-| **Programming** | Python |
-| **Libraries** | Pandas, NumPy, Matplotlib |
-| **Visualization** | Power BI |
-| **Version Control** | Git, GitHub |
-| **Environment** | Visual Studio Code |
+#### 1. High Cancellation and Incompletion Rates  
+- **38% of all trips remain incomplete.**  
+- **Driver cancellations (18%)** are nearly **three times higher** than customer cancellations (6.6%).  
+- The **“No Driver Found”** category represents **27K cases** out of 148K bookings — a major supply shortage indicator.  
+- **Longest Avg VTAT (12.1 mins)** occurs in **customer-canceled rides**, confirming that long driver arrival times lead to customer drop-offs.
 
----
+#### 2. Customer Behavior & Payment Trends  
+- **UPI payments dominate (≈43M EGP)**, followed by **Cash (13M EGP)** — indicating strong digital payment adoption.  
+- **Q4** records the **highest booking value**, showing seasonal peaks (end-of-year demand).  
 
-## 💡 Key Takeaways
-- Evening rides dominate demand (6–9 PM).  
-- Driver cancellations (18%) can be reduced through better incentives.  
-- Customers show high loyalty and satisfaction.  
-- Business can improve through optimized ride allocation and pricing.
+#### 3. Vehicle Preferences  
+- **Auto (24.9%)** and **Go Mini (19.8%)** rides are most popular, showing customer preference for affordable options.  
+- **All vehicle types average ~4.4 stars**, suggesting consistent satisfaction but potential micro-level service gaps.
 
 ---
 
+## 🛠️ Recommendations  
+
+### 1. Improve Driver Operations (Reduce Cancellations & No-Driver Cases)  
+
+| Issue | Recommendation | Objective |
+| :--- | :--- | :--- |
+| **High Driver Cancellation (18%)** | Implement a **reward & penalty system** — bonuses for high-completion drivers, penalties (reduced priority or temporary suspension) for unjustified cancellations. | Reduce driver cancellation rate. |
+| **“No Driver Found” (27K)** | Launch a **driver recruitment and retention campaign**, especially during peak hours and underserved areas. | Increase supply and reduce search failures. |
+| **Avg Driver Rating (4.24)** | Provide **training programs** on communication, punctuality, and trip handling to improve driver professionalism. | Boost ratings and service consistency. |
+
+---
+
+### 2. Optimize Waiting Time (Improve Avg VTAT & CTAT)  
+
+| Issue | Recommendation | Objective |
+| :--- | :--- | :--- |
+| **High Avg VTAT (8.41 mins)** | Use **AI-based demand forecasting** to guide drivers to predicted demand hotspots before actual surge. | Reduce waiting time and cancellations. |
+| **Customer Cancellations due to delay (12.1 mins)** | Set a **maximum wait threshold (e.g., 7 mins)** — notify both parties when exceeded and offer alternative options. | Reduce cancellation caused by long waits. |
+
+---
+
+### 3. Maximize Booking Value & Seasonal Demand  
+
+| Issue | Recommendation | Objective |
+| :--- | :--- | :--- |
+| **Q4 peak booking value** | Run **seasonal marketing campaigns and promotions** targeting end-of-year demand. | Maximize revenue during high-demand seasons. |
+| **Strong UPI and Cash usage** | Strengthen **UPI partnerships** and offer wallet discounts to encourage digital payments over cash. | Increase loyalty and reduce cash handling costs. |
+
+---
+
+### 🧩 Final Note  
+The main operational challenges lie in **driver-side cancellations** and **limited availability**, directly affecting the **completion rate** and **customer satisfaction**.  
+Focusing on these two factors — alongside smart supply planning and digital payment growth — can significantly enhance Uber’s service reliability and profitability.
+
+---
+
+## 👨‍💻 Author  
+**Kerolos Medhat**  
+📍 Cairo, Egypt  
+💼 Data Analyst | Python | Power BI  
+🔗 [GitHub Profile](https://github.com/Keromedhat)
