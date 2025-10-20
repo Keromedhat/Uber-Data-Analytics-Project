@@ -5,7 +5,7 @@ This project provides key insights into customer behavior, driver performance, a
 
 ---
 
-## 📊 Customer Dashboard  
+## 📊 Customer Dashboard (Power BI)
 ![Customer Dashboard](Customer%20Dashboard.png)
 
 ### Dashboard Overview  
@@ -50,21 +50,7 @@ Interactive filters allow users to view trends by **Payment Method**, **Vehicle 
    - Introduce loyalty points for frequent users to sustain engagement.
 
 ---
-
-## 🧠 Tech Stack  
-- **Python** – Data cleaning & transformation (Pandas, NumPy)  
-- **Power BI** – Dashboard design & visualization  
-- **Excel** – Initial data exploration  
-- **GitHub** – Version control and project sharing  
-
----
-
-## 📂 Repository Structure  
-
-
----
-
-## 🚗 3. Driver Dashboard (Power BI)
+## 🚗 Driver Dashboard (Power BI)
 
 ![Driver Dashboard](Driver%20Dashboard.png)
 
@@ -84,7 +70,7 @@ Analyzes driver reliability, activity, and performance metrics.
 
 ---
 
-## 🎯 4. Objectives
+## 🎯 Objectives
 - Analyze and compare **driver** and **customer** behavior.  
 - Build **interactive dashboards** for easy insights.  
 - Support business decisions using **data-driven insights**.  
@@ -92,7 +78,7 @@ Analyzes driver reliability, activity, and performance metrics.
 
 ---
 
-## 🛠️ 5. Tools & Technologies
+## 🛠️ Tools & Technologies
 
 | Category | Tools |
 |-----------|--------|
@@ -104,7 +90,7 @@ Analyzes driver reliability, activity, and performance metrics.
 
 ---
 
-## 💡 6. Key Takeaways
+## 💡 Key Takeaways
 - Evening rides dominate demand (6–9 PM).  
 - Driver cancellations (18%) can be reduced through better incentives.  
 - Customers show high loyalty and satisfaction.  
@@ -112,4 +98,3 @@ Analyzes driver reliability, activity, and performance metrics.
 
 ---
 
-## 📂 7. Repository Structure
