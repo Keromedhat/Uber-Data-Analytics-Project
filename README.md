@@ -8,7 +8,6 @@ This project provides key insights into customer behavior, driver performance, a
 ## 🧠 Tech Stack  
 - **Python** – Data cleaning & transformation (Pandas, NumPy)  
 - **Power BI** – Dashboard design & visualization  
-- **Excel** – Initial data exploration  
 - **GitHub** – Version control and project sharing  
 
 ---
